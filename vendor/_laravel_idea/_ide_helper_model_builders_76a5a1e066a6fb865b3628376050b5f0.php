@@ -21,7 +21,7 @@ namespace LaravelIdea\Helper\App\Models {
     use Illuminate\Pagination\Paginator;
     use LaravelIdea\Helper\_BaseBuilder;
     use LaravelIdea\Helper\_BaseCollection;
-
+    
     /**
      * @method Brand|null getOrPut($key, $value)
      * @method Brand|$this shift(int $count = 1)
@@ -47,7 +47,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_Brand_QB whereId($value)
      * @method _IH_Brand_QB whereName($value)
@@ -82,7 +82,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method Brand updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_Brand_QB extends _BaseBuilder {}
-
+    
     /**
      * @method PaymentMethod|null getOrPut($key, $value)
      * @method PaymentMethod|$this shift(int $count = 1)
@@ -108,7 +108,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_PaymentMethod_QB whereId($value)
      * @method _IH_PaymentMethod_QB whereName($value)
@@ -144,7 +144,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method _IH_PaymentMethod_QB active()
      */
     class _IH_PaymentMethod_QB extends _BaseBuilder {}
-
+    
     /**
      * @method ProductImage|null getOrPut($key, $value)
      * @method ProductImage|$this shift(int $count = 1)
@@ -170,7 +170,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_ProductImage_QB whereId($value)
      * @method _IH_ProductImage_QB whereProductId($value)
@@ -204,7 +204,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method ProductImage updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_ProductImage_QB extends _BaseBuilder {}
-
+    
     /**
      * @method ProductStock|null getOrPut($key, $value)
      * @method ProductStock|$this shift(int $count = 1)
@@ -230,7 +230,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_ProductStock_QB whereId($value)
      * @method _IH_ProductStock_QB whereProductId($value)
@@ -265,7 +265,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method ProductStock updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_ProductStock_QB extends _BaseBuilder {}
-
+    
     /**
      * @method Product|null getOrPut($key, $value)
      * @method Product|$this shift(int $count = 1)
@@ -291,7 +291,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_Product_QB whereId($value)
      * @method _IH_Product_QB whereName($value)
@@ -327,7 +327,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method Product updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_Product_QB extends _BaseBuilder {}
-
+    
     /**
      * @method Promo|null getOrPut($key, $value)
      * @method Promo|$this shift(int $count = 1)
@@ -353,7 +353,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_Promo_QB whereId($value)
      * @method _IH_Promo_QB whereName($value)
@@ -390,7 +390,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method Promo updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_Promo_QB extends _BaseBuilder {}
-
+    
     /**
      * @method TransactionDetail|null getOrPut($key, $value)
      * @method TransactionDetail|$this shift(int $count = 1)
@@ -416,7 +416,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_TransactionDetail_QB whereId($value)
      * @method _IH_TransactionDetail_QB whereTransactionId($value)
@@ -454,7 +454,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method TransactionDetail updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_TransactionDetail_QB extends _BaseBuilder {}
-
+    
     /**
      * @method Transaction|null getOrPut($key, $value)
      * @method Transaction|$this shift(int $count = 1)
@@ -480,7 +480,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_Transaction_QB whereId($value)
      * @method _IH_Transaction_QB whereUserId($value)
@@ -522,7 +522,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method Transaction updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_Transaction_QB extends _BaseBuilder {}
-
+    
     /**
      * @method UserAddress|null getOrPut($key, $value)
      * @method UserAddress|$this shift(int $count = 1)
@@ -548,7 +548,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_UserAddress_QB whereId($value)
      * @method _IH_UserAddress_QB whereUserId($value)
@@ -589,7 +589,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method UserAddress updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_UserAddress_QB extends _BaseBuilder {}
-
+    
     /**
      * @method UserPaymentMethod|null getOrPut($key, $value)
      * @method UserPaymentMethod|$this shift(int $count = 1)
@@ -615,7 +615,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_UserPaymentMethod_QB whereId($value)
      * @method _IH_UserPaymentMethod_QB whereUserId($value)
@@ -649,7 +649,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method UserPaymentMethod updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_UserPaymentMethod_QB extends _BaseBuilder {}
-
+    
     /**
      * @method UserWishlist|null getOrPut($key, $value)
      * @method UserWishlist|$this shift(int $count = 1)
@@ -675,7 +675,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_UserWishlist_QB whereId($value)
      * @method _IH_UserWishlist_QB whereUserId($value)
@@ -709,7 +709,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method UserWishlist updateOrCreate(array $attributes, array $values = [])
      */
     class _IH_UserWishlist_QB extends _BaseBuilder {}
-
+    
     /**
      * @method User|null getOrPut($key, $value)
      * @method User|$this shift(int $count = 1)
@@ -735,7 +735,7 @@ namespace LaravelIdea\Helper\App\Models {
             return [];
         }
     }
-
+    
     /**
      * @method _IH_User_QB whereId($value)
      * @method _IH_User_QB whereName($value)

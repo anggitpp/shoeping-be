@@ -36,7 +36,7 @@ namespace App\Models {
     use LaravelIdea\Helper\App\Models\_IH_User_QB;
     use LaravelIdea\Helper\Illuminate\Notifications\_IH_DatabaseNotification_C;
     use LaravelIdea\Helper\Illuminate\Notifications\_IH_DatabaseNotification_QB;
-
+    
     /**
      * @property int $id
      * @property string $name
@@ -57,7 +57,7 @@ namespace App\Models {
      * @mixin _IH_Brand_QB
      */
     class Brand extends Model {}
-
+    
     /**
      * @property int $id
      * @property string $name
@@ -78,7 +78,7 @@ namespace App\Models {
      * @mixin _IH_PaymentMethod_QB
      */
     class PaymentMethod extends Model {}
-
+    
     /**
      * @property int $id
      * @property string $name
@@ -109,7 +109,7 @@ namespace App\Models {
      * @mixin _IH_Product_QB
      */
     class Product extends Model {}
-
+    
     /**
      * @property int $id
      * @property int $product_id
@@ -129,7 +129,7 @@ namespace App\Models {
      * @mixin _IH_ProductImage_QB
      */
     class ProductImage extends Model {}
-
+    
     /**
      * @property int $id
      * @property int $product_id
@@ -150,7 +150,7 @@ namespace App\Models {
      * @mixin _IH_ProductStock_QB
      */
     class ProductStock extends Model {}
-
+    
     /**
      * @property int $id
      * @property string $name
@@ -172,7 +172,7 @@ namespace App\Models {
      * @mixin _IH_Promo_QB
      */
     class Promo extends Model {}
-
+    
     /**
      * @property int $id
      * @property int $user_id
@@ -210,7 +210,7 @@ namespace App\Models {
      * @mixin _IH_Transaction_QB
      */
     class Transaction extends Model {}
-
+    
     /**
      * @property int $id
      * @property int $transaction_id
@@ -240,7 +240,7 @@ namespace App\Models {
      * @mixin _IH_TransactionDetail_QB
      */
     class TransactionDetail extends Model {}
-
+    
     /**
      * @property int $id
      * @property string $name
@@ -283,7 +283,7 @@ namespace App\Models {
      * @method static UserFactory factory(...$parameters)
      */
     class User extends Model {}
-
+    
     /**
      * @property int $id
      * @property int $user_id
@@ -312,7 +312,7 @@ namespace App\Models {
      * @mixin _IH_UserAddress_QB
      */
     class UserAddress extends Model {}
-
+    
     /**
      * @property int $id
      * @property int $user_id
@@ -332,7 +332,7 @@ namespace App\Models {
      * @mixin _IH_UserPaymentMethod_QB
      */
     class UserPaymentMethod extends Model {}
-
+    
     /**
      * @property int $id
      * @property int $user_id

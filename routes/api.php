@@ -22,6 +22,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     //get list users from API/AuthController
     Route::get('user', [App\Http\Controllers\API\AuthController::class, 'user'])->name('user');
     Route::get('users', [App\Http\Controllers\API\AuthController::class, 'users'])->name('users.index');
+
+    Route::get('products', [App\Http\Controllers\API\ProductController::class, 'products'])->name('products');
 });
 
 Route::post('login', [App\Http\Controllers\API\AuthController::class, 'login'])->name('login');

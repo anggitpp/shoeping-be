@@ -25,6 +25,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     Route::get('products', [App\Http\Controllers\API\HomeController::class, 'products'])->name('products');
     Route::get('brands', [App\Http\Controllers\API\HomeController::class, 'brands'])->name('brands');
+    Route::get('promos', [App\Http\Controllers\API\HomeController::class, 'promos'])->name('promos');
 });
 
 Route::post('login', [App\Http\Controllers\API\AuthController::class, 'login'])->name('login');

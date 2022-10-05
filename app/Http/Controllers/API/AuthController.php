@@ -35,28 +35,6 @@ class AuthController extends Controller
 
     public function register(Request $request)
     {
-//        try {
-//            $request->validate([
-//                'name' => 'required|string',
-//                'email' => 'required|string|email|unique:users',
-//                'password' => 'required|string'
-//            ]);
-//
-//            $user = User::create([
-//                'name' => $request->name,
-//                'email' => $request->email,
-//                'password' => Hash::make($request->password),
-//            ]);
-//
-//            return response()->json([
-//                'message' => 'Successfully created user!',
-//                'user' => $user
-//            ], 201);
-//        } catch (\Throwable $th) {
-//            throw new HttpException(500, $th->getMessage());
-//        }
-
-        //try catch with symfony exception
         try {
             $validator = \Validator::make($request->all(), [
                 'name' => 'required|string',

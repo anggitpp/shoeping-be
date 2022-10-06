@@ -5,7 +5,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>User Wishlist</h3>
+                        <h3>User Address</h3>
                     </div>
                     <div class="card-body">
                         @if(session()->has('message'))

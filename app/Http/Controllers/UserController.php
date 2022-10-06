@@ -171,11 +171,13 @@ class UserController extends Controller
     public function wishlistUpdate(Request $request, int $id)
     {
         UserWishlist::whereUserId($id)->delete();
-        foreach ($request->product_id as $key => $value) {
-            UserWishlist::create([
-                'user_id' => $id,
-                'product_id' => $value
-            ]);
+        if(isset($request->product_id)) {
+            foreach ($request->product_id as $key => $value) {
+                UserWishlist::create([
+                    'user_id' => $id,
+                    'product_id' => $value
+                ]);
+            }
         }
 
         session()->flash('message', 'Wishlist updated successfully');

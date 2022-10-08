@@ -1,4 +1,4 @@
-<?php //37ac0c92adb12def7ff9db2104c4247e
+<?php //3760d0a7d23ce88427d1a73a7fc15705
 /** @noinspection all */
 
 namespace App\Models {
@@ -297,6 +297,7 @@ namespace App\Models {
      * @property string $status
      * @property Carbon|null $created_at
      * @property Carbon|null $updated_at
+     * @property string $address
      * @property User $user
      * @method BelongsTo|_IH_User_QB user()
      * @method static _IH_UserAddress_QB onWriteConnection()

@@ -36,6 +36,10 @@
                                   <label for="phone_number">Phone Number</label>
                                   <input type="text" class="form-control" name="phone_number" id="phone_number" value="{{ !empty($address) ? $address->phone_number : old('phone_number') }}">
                                 </div>
+                              <div class="form-group">
+                                  <label for="detail">Alamat</label>
+                                  <textarea class="form-control" name="alamat" id="alamat" rows="3">{{ !empty($address) ? $address->alamat : old('alamat') }}</textarea>
+                              </div>
                                 <div class="form-group">
                                   <label for="detail">Detail</label>
                                   <textarea class="form-control" name="detail" id="detail" rows="3">{{ !empty($address) ? $address->detail : old('detail') }}</textarea>

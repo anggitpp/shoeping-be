@@ -1,4 +1,4 @@
-<?php //8c342783b31e20a33d5842f64f625868
+<?php //dcea6696643aff14c1defd5498649b85
 /** @noinspection all */
 
 namespace LaravelIdea\Helper\App\Models {
@@ -562,6 +562,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method _IH_UserAddress_QB whereStatus($value)
      * @method _IH_UserAddress_QB whereCreatedAt($value)
      * @method _IH_UserAddress_QB whereUpdatedAt($value)
+     * @method _IH_UserAddress_QB whereAddress($value)
      * @method UserAddress baseSole(array|string $columns = ['*'])
      * @method UserAddress create(array $attributes = [])
      * @method _IH_UserAddress_C|UserAddress[] cursor()

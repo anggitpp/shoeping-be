@@ -1,19 +1,19 @@
-<?php //ce71e2417516a266a8dbcdf2daf44083
+<?php //3b73fa7159fb4c1cd4c223a61085eae2
 /** @noinspection all */
 
 namespace Illuminate\Database\Eloquent {
-
+    
     /**
-     * @method static $this onlyTrashed(Builder $builder)
-     * @method static int restore(Builder $builder)
-     * @method static $this withTrashed(Builder $builder, $withTrashed = true)
-     * @method static $this withoutTrashed(Builder $builder)
+     * @method static $this onlyTrashed()
+     * @method static int restore()
+     * @method static $this withTrashed($withTrashed = true)
+     * @method static $this withoutTrashed()
      */
     class Builder {}
 }
 
 namespace Illuminate\Http {
-
+    
     /**
      * @method static bool hasValidRelativeSignature()
      * @method static bool hasValidSignature($absolute = true)
@@ -24,7 +24,7 @@ namespace Illuminate\Http {
 }
 
 namespace Illuminate\Support\Facades {
-
+    
     /**
      * @method static void auth($options = [])
      * @method static void confirmPassword()

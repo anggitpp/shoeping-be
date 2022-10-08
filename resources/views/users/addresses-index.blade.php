@@ -36,7 +36,7 @@
                                     <td>{{ $address->subtitle }}</td>
                                     <td>{{ $address->name }}</td>
                                     <td>{{ $address->phone_number }}</td>
-                                    <td>{{ $address->detail }}</td>
+                                    <td>{{ $address->address }}</td>
                                     <td>{{ $address->longitude }}, {{ $address->latitude }}</td>
                                     <td>{{ ucwords($address->status) }}</td>
                                     <td align="center">

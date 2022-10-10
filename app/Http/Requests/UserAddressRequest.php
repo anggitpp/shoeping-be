@@ -16,7 +16,6 @@ class UserAddressRequest extends FormRequest
         return true;
     }
 
-    //create rules required for title, subtitle, name, phone number, detail, longitutude, latitude with indonesian messages
     public function rules()
     {
         return [

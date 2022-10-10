@@ -28,6 +28,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('promos', [App\Http\Controllers\API\HomeController::class, 'promos'])->name('promos');
 
     Route::post('editProfile', [App\Http\Controllers\API\ProfileController::class, 'editProfile'])->name('editProfile');
+
+    //all routes related to addresses
+    Route::post('address/store', [App\Http\Controllers\API\AddressController::class, 'store'])->name('address.store');
 });
 
 Route::post('login', [App\Http\Controllers\API\AuthController::class, 'login'])->name('login');

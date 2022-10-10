@@ -38,7 +38,7 @@
                                 </div>
                               <div class="form-group">
                                   <label for="detail">Alamat</label>
-                                  <textarea class="form-control" name="alamat" id="alamat" rows="3">{{ !empty($address) ? $address->alamat : old('alamat') }}</textarea>
+                                  <textarea class="form-control" name="address" id="address" rows="3">{{ !empty($address) ? $address->address : old('address') }}</textarea>
                               </div>
                                 <div class="form-group">
                                   <label for="detail">Detail</label>

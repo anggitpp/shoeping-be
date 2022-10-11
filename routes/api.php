@@ -31,6 +31,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     //all routes related to addresses
     Route::post('address/store', [App\Http\Controllers\API\AddressController::class, 'store'])->name('address.store');
+    Route::post('address/{id}/update', [App\Http\Controllers\API\AddressController::class, 'update'])->name('address.update');
+    Route::delete('address/{id}/delete', [App\Http\Controllers\API\AddressController::class, 'destroy'])->name('address.delete');
 });
 
 Route::post('login', [App\Http\Controllers\API\AuthController::class, 'login'])->name('login');

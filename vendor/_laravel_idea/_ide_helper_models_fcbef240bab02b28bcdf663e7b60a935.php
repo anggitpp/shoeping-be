@@ -1,4 +1,4 @@
-<?php //3760d0a7d23ce88427d1a73a7fc15705
+<?php //d233dd57501fd416ce8572766d0b9b0e
 /** @noinspection all */
 
 namespace App\Models {
@@ -160,6 +160,7 @@ namespace App\Models {
      * @property int $value
      * @property Carbon|null $created_at
      * @property Carbon|null $updated_at
+     * @property string $code
      * @method static _IH_Promo_QB onWriteConnection()
      * @method _IH_Promo_QB newQuery()
      * @method static _IH_Promo_QB on(null|string $connection = null)
@@ -288,7 +289,7 @@ namespace App\Models {
      * @property int $id
      * @property int $user_id
      * @property string $title
-     * @property string|null $subtitle
+     * @property string $subtitle
      * @property string $name
      * @property string $phone_number
      * @property string $detail

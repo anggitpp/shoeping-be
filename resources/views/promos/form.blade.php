@@ -24,6 +24,10 @@
                                  <label for="name">Name</label>
                                  <input type="text" class="form-control" name="name" id="name" value="{{ $promo->name ?? old('name') }}" placeholder="Enter name">
                             </div>
+                              <div class="form-group">
+                                  <label for="name">Kode</label>
+                                  <input type="text" class="form-control" name="code" id="code" value="{{ $promo->code ?? old('code') }}" placeholder="Enter Kode">
+                              </div>
                             <div class="form-group ">
                                 <label for="type">Type</label>
                                 <div class="form-check">

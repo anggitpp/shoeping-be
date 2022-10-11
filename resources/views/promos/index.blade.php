@@ -14,6 +14,7 @@
                                 <tr>
                                     <th width="20">No</th>
                                     <th width="200">Nama</th>
+                                    <th width="100">Kode</th>
                                     <th width="100">Tipe</th>
                                     <th width="100">Value</th>
                                     <th width="*">Keterangan</th>
@@ -26,6 +27,7 @@
                                 <tr>
                                     <td>{{ $key+1 }}</td>
                                     <td>{{ $promo->name }}</td>
+                                    <td>{{ $promo->code }}</td>
                                     <td>{{ $promo->type }}</td>
                                     <td>{{ $promo->value }}</td>
                                     <td>{{ $promo->description }}</td>

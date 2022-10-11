@@ -96,7 +96,7 @@ class AuthController extends Controller
 
     public function user(Request $request)
     {
-        $user = User::with(['paymentMethods', 'wishlists', 'addresses'])->where('email', $request->query('email'))->first();
+        $user = User::with(['wishlists', 'addresses'])->where('email', $request->query('email'))->first();
         if($user) {
             return response()->json([
                 'message' => 'Success',

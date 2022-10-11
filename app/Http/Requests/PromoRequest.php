@@ -26,6 +26,7 @@ class PromoRequest extends FormRequest
     {
         return [
             'name' => 'required',
+            'code' => 'required',
             'type' => 'required',
             'value' => 'required',
         ];
@@ -35,6 +36,7 @@ class PromoRequest extends FormRequest
     {
         return [
             'name.required' => 'Nama promo harus diisi',
+            'code.required' => 'Kode promo harus diisi',
             'type.required' => 'Tipe promo harus diisi',
             'value.required' => 'Nilai promo harus diisi',
         ];

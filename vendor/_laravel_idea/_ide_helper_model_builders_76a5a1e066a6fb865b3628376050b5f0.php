@@ -1,4 +1,4 @@
-<?php //dcea6696643aff14c1defd5498649b85
+<?php //1683f86473dc5ed688221d46cb60eb91
 /** @noinspection all */
 
 namespace LaravelIdea\Helper\App\Models {
@@ -363,6 +363,7 @@ namespace LaravelIdea\Helper\App\Models {
      * @method _IH_Promo_QB whereValue($value)
      * @method _IH_Promo_QB whereCreatedAt($value)
      * @method _IH_Promo_QB whereUpdatedAt($value)
+     * @method _IH_Promo_QB whereCode($value)
      * @method Promo baseSole(array|string $columns = ['*'])
      * @method Promo create(array $attributes = [])
      * @method _IH_Promo_C|Promo[] cursor()

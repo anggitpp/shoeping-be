@@ -1,4 +1,4 @@
-<?php //d233dd57501fd416ce8572766d0b9b0e
+<?php //38c2f4a04b8ffbe7c46a9f49a3c5b606
 /** @noinspection all */
 
 namespace App\Models {
@@ -341,6 +341,8 @@ namespace App\Models {
      * @property int $product_id
      * @property Carbon|null $created_at
      * @property Carbon|null $updated_at
+     * @property Product $product
+     * @method BelongsTo|_IH_Product_QB product()
      * @property User $user
      * @method BelongsTo|_IH_User_QB user()
      * @method static _IH_UserWishlist_QB onWriteConnection()

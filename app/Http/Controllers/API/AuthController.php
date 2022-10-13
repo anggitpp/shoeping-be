@@ -96,7 +96,11 @@ class AuthController extends Controller
 
     public function user(Request $request)
     {
-        $user = User::with(['wishlists', 'addresses'])->where('email', $request->query('email'))->first();
+        $user = User::with(['wishlists.product.stocks', 'wishlists.product.images', 'addresses'])->where('email', $request->query('email'))->first();
+        foreach ($user->wishlists as $wishlist) {
+            $wishlist->product->image = $wishlist->product->images->first()->image;
+            $wishlist->product->brand_name = $wishlist->product->brand()->select('name')->value('name');
+        }
         if($user) {
             return response()->json([
                 'message' => 'Success',

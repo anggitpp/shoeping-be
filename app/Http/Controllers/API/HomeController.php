@@ -42,4 +42,26 @@ class HomeController extends Controller
             'data' => $promos
         ]);
     }
+
+    public function deleteWishlist(int $id){
+        $user = auth()->user();
+        $user->wishlists()->where('product_id', $id)->delete();
+
+        return response()->json([
+            'message' => 'Successfully delete wishlist!',
+            'data' => $user->wishlists
+        ]);
+    }
+
+    public function storeWishlist(int $id){
+        $user = auth()->user();
+        $user->wishlists()->create([
+            'product_id' => $id
+        ]);
+
+        return response()->json([
+            'message' => 'Successfully add wishlist!',
+            'data' => $user->wishlists
+        ]);
+    }
 }

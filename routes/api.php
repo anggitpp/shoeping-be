@@ -26,6 +26,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('products', [App\Http\Controllers\API\HomeController::class, 'products'])->name('products');
     Route::get('brands', [App\Http\Controllers\API\HomeController::class, 'brands'])->name('brands');
     Route::get('promos', [App\Http\Controllers\API\HomeController::class, 'promos'])->name('promos');
+    //all routes related to wishlists
+    Route::post('wishlist/{id}/store', [App\Http\Controllers\API\HomeController::class, 'storeWishlist'])->name('wishlist.store');
+    Route::delete('wishlist/{id}/delete', [App\Http\Controllers\API\HomeController::class, 'deleteWishlist'])->name('wishlist.delete');
 
     Route::post('editProfile', [App\Http\Controllers\API\ProfileController::class, 'editProfile'])->name('editProfile');
 
